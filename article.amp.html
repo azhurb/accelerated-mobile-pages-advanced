@@ -53,6 +53,10 @@
       }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+
     <script type="application/ld+json">
     {
      "@context": "http://schema.org",
@@ -96,19 +100,40 @@
             width="300"
             height="250"
             type="doubleclick"
-            data-slot="/35096353/amptesting/geo/uk">
-      <div fallback>No ad appeared because you're not browsing from the UK!</div>
+            data-slot="/35096353/amptesting/image/static">
     </amp-ad>
 
     <amp-ad
             width="300"
             height="250"
-            type="doubleclick"
-            data-slot="/35096353/amptesting/geo/us">
-      <div fallback>No ad appeared because you're not browsing from the US!</div>
+            type="a9"
+            data-aax_size="300x250"
+            data-aax_pubname="test123"
+            data-aax_src="302">
     </amp-ad>
     <article>
       <h1>Article Name</h1>
+
+      <amp-fit-text width="400" height="75" layout="responsive" max-font-size="42">
+        And the Raven, never flitting, still is sitting, still is sitting. On the pallid bust of Pallas just above my chamber door; And his eyes have all the seeming of a demon's that is dreaming, And the lamp-light o'er him streaming throws his shadow on the floor; And my soul from out that shadow that lies floating on the floor. Shall be lifted—nevermore!
+      </amp-fit-text>
+
+      <amp-twitter
+              width="486"
+              height="657"
+              layout="responsive"
+              data-tweetid="638793490521001985">
+      </amp-twitter>
+
+      <amp-youtube
+              data-videoid="mGENRKrdoGY"
+              layout="responsive"
+              width="480"
+              height="270">
+        <div fallback>
+          <p>The video could not be loaded.</p>
+        </div>
+      </amp-youtube>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas tortor sapien, non tristique ligula accumsan eu.</p>
 
